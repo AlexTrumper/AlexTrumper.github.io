@@ -47,6 +47,23 @@ section h2 {
   width: 13em;
   border-radius: 30%;
 }
+.del { display: none;}
+.del:not(:checked) + label + * { display: none; }
+.del:not(:checked) + label,
+.del:checked + label {
+padding: 5px;
+border: 2px solid black;
+display: inline-block;
+color: black;
+background: white;
+}
+.del:checked + label {
+background: skyblue;
+text-align: center;
+}
+.knopka {
+  text-align: center;
+}
 footer {
   width: 100%;
   text-align: center;
